@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Раскрывающийся список</title>
+	 <!-- <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.11.2/jquery-ui.min.js" type="text/javascript"></script> -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="style.less">
+
+	
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+	<div class="container">
+		<div class="thumb">
+			<div class="content">
+				<h2>item 1</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum eaque qui saepe ut consequuntur, doloribus ipsum, porro tenetur minus dolores reprehenderit? Ullam labore natus, deleniti dolor asperiores quidem veniam nesciunt!</p>
+			</div>
+			<div class="wrapper">
+				<img src="http://placehold.it/300x200" alt="">
+			</div>
+		</div>
+		<div class="thumb">
+			<div class="content">
+				<h2>item 2</h2>
+				<p>Placeat molestias, quidem doloremque dignissimos ipsum, odio tempore blanditiis, vero cumque alias ab, sint distinctio quod officia. Vitae voluptatem enim, veniam eos, aperiam, iste debitis sit deserunt rerum similique quam.</p>
+			</div>
+			<div class="wrapper">
+				<img src="http://placehold.it/300x200" alt="">
+			</div>
+		</div>
+		<div class="thumb">
+			<div class="content">
+				<h2>item 3</h2>
+				<p>Itaque cumque veniam quibusdam, libero dolorem. Dolorum officia beatae veritatis magnam ut id, voluptate quibusdam saepe adipisci ex quae eaque aliquid praesentium molestiae corrupti, inventore itaque dolorem velit veniam. Praesentium!</p>
+			</div>
+			<div class="wrapper">
+				<img src="http://placehold.it/300x200" alt="">
+			</div>
+		</div>
+		<div class="thumb">
+			<div class="content">
+				<h2>item 4</h2>
+				<p>Aspernatur, consectetur quae optio debitis autem porro recusandae at tempore voluptas, voluptatum eius quia ipsum suscipit magni repudiandae officia iure eum pariatur reprehenderit tenetur alias illum. Ipsa quod atque pariatur.</p>
+			</div>
+			<div class="wrapper">
+				<img src="http://placehold.it/300x200" alt="">
+			</div>
+		</div>
+		<div class="thumb">
+			<div class="content">
+				<h2>item 5</h2>
+				<p>Nam distinctio accusamus assumenda minus pariatur, fugiat velit sed, doloribus alias placeat, ab in deserunt cumque ipsam! Repellat qui nobis suscipit sed, debitis magni eveniet sapiente! Quibusdam in ipsam, aperiam.</p>
+			</div>
+			<div class="wrapper">
+				<img src="http://placehold.it/300x200" alt="">
+			</div>
+		</div>
+		<div class="thumb">
+			<div class="content">
+				<h2>item 6</h2>
+				<p>Voluptatum, itaque asperiores enim, ullam architecto odit ducimus debitis libero nesciunt. Sunt alias maiores reiciendis, expedita deserunt officia voluptas voluptate magnam! Ea nobis odio numquam adipisci praesentium nostrum et officia!</p>
+			</div>
+			<div class="wrapper">
+				<img src="http://placehold.it/300x200" alt="">
+			</div>
+		</div>
+		<div class="thumb">
+			<div class="content">
+				<h2>item 7</h2>
+				<p>Eius iure vitae quo dicta sed molestias inventore voluptate rem, accusantium nihil, quos error cum quis voluptatem odio eligendi assumenda. Ut inventore ab, dicta temporibus rem optio quibusdam necessitatibus? Nihil?</p>
+			</div>
+			<div class="wrapper">
+				<img src="http://placehold.it/300x200" alt="">
+			</div>
+		</div>
+		<div class="thumb">
+			<div class="content">
+				<h2>item 8</h2>
+				<p>Delectus debitis nulla ipsa commodi rerum officiis ad aliquid, eos optio, totam sit quod nisi tenetur quaerat quisquam vitae dolores vel, odit qui mollitia molestias in eius. Cum, necessitatibus, provident.</p>
+			</div>
+			<div class="wrapper">
+				<img src="http://placehold.it/300x200" alt="">
+			</div>
+		</div>
+		<div class="thumb">
+			<div class="content">
+				<h2>item 9</h2>
+				<p>Iste vel voluptas nihil, sit, qui nostrum sint voluptatum quis aut alias sequi cum neque laborum, modi illo ratione cupiditate a atque inventore velit ab ex recusandae, vitae amet! Quasi.</p>
+			</div>
+			<div class="wrapper">
+				<img src="http://placehold.it/300x200" alt="">
+			</div>
+		</div>
+	</div>
+
+	<script>
+		$(function(){
+			$('.wrapper').hover(function(){
+				$(this).children().stop().animate( {marginTop: '100%', opacity: 0}, 600);
+			},function(){
+				$(this).children().stop().animate( {marginTop: '0%', opacity: 1}, 600);
+			});
+		})
+	</script>
+</body>
+</html>
